@@ -1,12 +1,10 @@
 # Tic Tac Toe Game
 
----
 
 Um simples Jogo da Velha feito em Java.
 
 O objetivo do jogo é ser o primeiro a conseguir marcar três espaços em uma reta.
 
----
 
 ## Main
 
@@ -21,7 +19,6 @@ A classe Main fica encarregada de:
 - Finalizar o jogo.
   
 
----
 
 ## Classe Board
 
