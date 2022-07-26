@@ -40,7 +40,7 @@ public class Board {
     }
 
     public int checkGame() {
-        //Win Player1 = 0, Win PLayer2 = 1, In game = 3, Drawn = 2
+        //Win Player1 = 0, Win PLayer2 = 1, In game = 2, Drawn = 3
         if(checkWin(player1)==true) return 0;
         if(checkWin(player2)==true) return 1;
         if((player1.size()+player2.size()==9)) return 3;
