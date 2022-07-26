@@ -28,7 +28,14 @@ public class Main {
             if(player==0) System.out.println("It is time of player \"O\"");
             else System.out.println("It is time of player \"X\".");
             position = input.nextInt();
-            game.play(player, position);
+            try {
+                game.play(player, position);
+            } catch(IndexOutOfBoundsException e) {
+                System.out.println("Position is out of index. Please, enter in a number between 1 and 9.");
+                //The same player continuoes entering a number util enter a correct value
+                if(player==0) player++;
+                else player--;
+            }
             if(player==0) player++;
             else player--;
         }

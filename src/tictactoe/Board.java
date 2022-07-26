@@ -30,6 +30,9 @@ public class Board {
 
     public int play(int player, int position) {
         //Player1 = zero, Player 2 = positive number
+        if(position<1 || position>9) {
+            throw new IndexOutOfBoundsException("Index"+position+"is out of bounds. Good values are in between 1 and 9.");
+        }
         if(player1.contains(position) || player2.contains(position)) return -1; //Position has already been played
         if(player == 0) player1.add(position);
         else player2.add(position);
