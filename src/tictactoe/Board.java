@@ -14,6 +14,13 @@ public class Board {
         player2 = new ArrayList<>();
     }
 
+    public List<Integer> getPlayer1() {
+        return player1;
+    }
+    public List<Integer> getPlayer2() {
+        return player2;
+    }
+
     private boolean checkWin(List<Integer> player) {
         for (int i = 0; i < combination.length; i++) {
             if(player.containsAll(Arrays.asList(combination[i]))) return true;
